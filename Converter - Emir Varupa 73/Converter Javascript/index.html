@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="konverterjedinica.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class='header'>
+      <h1>Konverter mjernih jedinica</h1>
+  </div>
+
+<br>
+<button class="tabstyle" onclick="otvori('KDuzine', this)">Konverter Duzine</button>
+<button class="tabstyle" onclick="otvori('KMase', this)">Konverter Mase</button>
+<br><br><br><br><br><br>
+<div id="KDuzine" class="tabhidden">
+  <form class="styleforme" name="konverterduzine">
+    <br>
+    <br>
+    <div class="tekst">Kilometar:</div> <input type="text" name="kilometar" oninput="kilometarK()">
+     <br>
+     <div class="tekst">Metar:</div> <input type="text" name="metar" oninput="metarK()">
+     <br>
+     <div class="tekst">Decimetar:</div> <input type="text" name="decimetar" oninput="decimetarK()">
+     <br>
+     <div class="tekst">Centimetar:</div> <input type="text" name="centimetar" oninput="centimetarK()">
+     <br>
+     <div class="tekst">Milimetar:</div> <input type="text" name="milimetar" oninput="milimetarK()">
+     <br>
+     <div class="tekst">Mikrometar:</div> <input type="text" name="mikrometar" oninput="mikrometarK()">
+     </form>
+</div>
+
+<div id="KMase" class="tabhidden">
+  <form class="styleforme" name="konvertermase">
+  <br>
+  <br>
+  <div class="tekst">Tona:</div> <input type="text" name="tona" oninput="tonaK()">
+  <br>
+  <div class="tekst">Kvintal:</div> <input type="text" name="kvintal" oninput="kvintalK()">
+  <br>
+  <div class="tekst">Kilogram:</div> <input type="text" name="kilogram" oninput="kilogramK()">
+  <br>
+  <div class="tekst">Dekagram:</div> <input type="text" name="dekagram" oninput="dekagramK()">
+  <br>
+  <div class="tekst">Gram:</div> <input type="text" name="gram" oninput="gramK()">
+  <br>
+  <div class="tekst">Miligram:</div> <input type="text" name="miligram" oninput="miligramK()">
+  </form></div>
+    
+</body>
+</html>
